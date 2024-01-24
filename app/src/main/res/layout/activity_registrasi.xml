@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.auth.Registrasi">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="25dp"
+        android:contentDescription="@string/imageview"
+        android:layout_marginEnd="23dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_logo" />
+
+    <ImageView
+        android:contentDescription="@string/imageview"
+        android:id="@+id/imageView2"
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="23dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_regis" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/sign_up"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="23dp"
+        android:orientation="vertical">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:startIconDrawable="@drawable/ic_person"
+            app:endIconMode="clear_text"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:boxStrokeColor="#FFF"
+            app:boxBackgroundColor="#FFF"
+            >
+            <bangkit.roy.storyappmaster.ui.MyEditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_edittext"
+                android:drawablePadding="12dp"
+                android:inputType="text"
+                android:paddingStart="12dp"
+                android:hint="@string/name"
+                android:ems="10"
+                android:textSize="14sp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:startIconDrawable="@drawable/ic_email"
+            app:endIconMode="clear_text"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:boxStrokeColor="#FFF"
+            app:boxBackgroundColor="#FFF"
+            android:layout_marginTop="10dp"
+            >
+            <bangkit.roy.storyappmaster.ui.MyEditText
+
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_edittext"
+                android:drawablePadding="12dp"
+                android:inputType="textEmailAddress"
+                android:paddingStart="12dp"
+                android:hint="@string/email_address"
+                android:ems="10"
+                android:textSize="14sp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            app:startIconDrawable="@drawable/ic_password"
+            app:passwordToggleEnabled="true"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:boxStrokeColor="#FFF"
+            app:boxBackgroundColor="#FFF"
+            >
+            <bangkit.roy.storyappmaster.ui.MyEditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_edittext"
+                android:drawablePadding="12dp"
+                android:inputType="textPassword"
+                android:paddingStart="12dp"
+                android:hint="@string/password"
+                android:ems="10"
+                android:textSize="14sp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_regis"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_login"
+            android:text="@string/sign_up"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/already_have_an_account"
+                android:textColor="#A4A9B0"
+                android:textSize="14sp"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/login"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:background="@null"
+                android:text="@string/log_in"
+                android:textAllCaps="false"
+                android:textColor="@color/orange"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/prgrsbar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

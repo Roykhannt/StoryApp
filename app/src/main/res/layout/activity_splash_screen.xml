@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    app:layoutDescription="@xml/activity_splash_screen_scene"
+    tools:context=".ui.SplashScreen">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/imageview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_logo" />
+
+    <ImageView
+        android:id="@+id/img_sp1"
+        android:layout_width="0dp"
+        android:layout_height="350dp"
+        android:contentDescription="@string/imageview"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/ic_sp1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <TextView
+        android:id="@+id/titlesp1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/img_sp1"
+        app:layout_constraintStart_toStartOf="@+id/img_sp1"
+        app:layout_constraintTop_toBottomOf="@+id/img_sp1"
+        android:text="@string/sp1" />
+
+    <TextView
+        android:id="@+id/descMenu1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="@string/dessp1"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/titlesp1"
+        app:layout_constraintStart_toStartOf="@+id/titlesp1"
+        app:layout_constraintTop_toBottomOf="@+id/titlesp1" />
+
+    <ImageView
+        android:id="@+id/logoMenu2"
+        android:layout_width="0dp"
+        android:layout_height="350dp"
+        android:contentDescription="@string/imageview"
+        android:src="@drawable/ic_sp2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <TextView
+        android:id="@+id/titlesp2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="@string/sp2"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/logoMenu2"
+        app:layout_constraintStart_toStartOf="@+id/logoMenu2"
+        app:layout_constraintTop_toBottomOf="@+id/logoMenu2" />
+
+    <TextView
+        android:id="@+id/descMenu2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="@string/dessp2"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/titlesp2"
+        app:layout_constraintStart_toStartOf="@+id/titlesp2"
+        app:layout_constraintTop_toBottomOf="@+id/titlesp2" />
+
+
+    <ImageView
+        android:id="@+id/logoMenu3"
+        android:layout_width="0dp"
+        android:layout_height="350dp"
+        android:contentDescription="@string/imageview"
+        android:src="@drawable/ic_sp3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <TextView
+        android:id="@+id/titleMenu3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/logoMenu3"
+        app:layout_constraintStart_toStartOf="@+id/logoMenu3"
+        app:layout_constraintTop_toBottomOf="@+id/logoMenu3"
+        android:text="@string/sp3" />
+
+    <TextView
+        android:id="@+id/descMenu3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="@string/dessp3"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/titleMenu3"
+        app:layout_constraintStart_toStartOf="@+id/titleMenu3"
+        app:layout_constraintTop_toBottomOf="@+id/titleMenu3" />
+
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/menu1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="25dp"
+        app:altSrc="@drawable/ic_circle_full_24"
+        app:layout_constraintEnd_toEndOf="@+id/descMenu1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descMenu1"
+        app:srcCompat="@drawable/ic_circle_24"
+        app:tint="@color/orange" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/menu3"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:altSrc="@drawable/ic_circle_full_24"
+        app:layout_constraintBottom_toBottomOf="@id/menu2"
+        app:layout_constraintStart_toEndOf="@id/menu2"
+        app:layout_constraintTop_toTopOf="@id/menu2"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_circle_24"
+        app:tint="@color/orange" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/menu2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:altSrc="@drawable/ic_circle_full_24"
+        app:layout_constraintBottom_toBottomOf="@id/menu1"
+        app:layout_constraintStart_toEndOf="@id/menu1"
+        app:layout_constraintTop_toTopOf="@id/menu1"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_circle_24"
+        app:tint="@color/orange" />
+
+    <LinearLayout
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            card_view:cardCornerRadius="40dp"
+            android:backgroundTint="@color/white">
+
+            <ToggleButton
+                android:id="@+id/next_tgl"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="9dp"
+                android:textOn=""
+                android:textOff=""
+                android:background="@drawable/ic_next"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
